@@ -22,7 +22,7 @@ void main(void) {
     }
 	onGraphics();
 	while(TRUE) {
-        uchar pad = padPush(PAD_PORT_PLAYER_1);
+        uchar pad = padPush(PAD_PORT_1);
         if (pad & PAD_BUTTON_UP && brightBackground < 8)
             brightBackground++;
         if (pad & PAD_BUTTON_DOWN && brightBackground > 0)
